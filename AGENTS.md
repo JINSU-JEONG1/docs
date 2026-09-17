@@ -20,6 +20,12 @@ Supported formats:
 * Prefer official or primary sources.
 * Use approved templates when available.
 
+## Identity
+
+Before creating a new user-facing document or intentionally redesigning an existing one, read and follow `identity/STYLE.md`.
+
+Do not apply the identity guide to extraction, conversion, analysis, or minor edits that should preserve an existing style. Explicit user instructions and approved project templates take precedence.
+
 ## Skills
 
 Reusable, agent-neutral skills live in `skills/`.
