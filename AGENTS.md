@@ -4,6 +4,7 @@ Create clear, accurate, and professional document artifacts.
 
 Supported formats:
 
+* Markdown
 * DOCX
 * PPTX
 * XLSX
@@ -27,6 +28,7 @@ Agent-specific discovery paths such as `.agents/skills` and `.claude/skills` are
 
 Use the appropriate format-specific skill:
 
+* Markdown → Markdown Docs skill
 * DOCX → Word skill
 * PPTX → PowerPoint skill
 * XLSX → Excel skill
