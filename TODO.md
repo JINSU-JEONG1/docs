@@ -4,8 +4,9 @@
 
 ## 완료
 
-* 폴더 뼈대 생성: `templates/`, `assets/`, `references/`, `archive/`, `.claude/skills/{word,powerpoint,excel,pdf}/`
-* Anthropic 공식 docx/pptx/xlsx/pdf skill을 `.claude/skills/`에 가져옴
+* 폴더 뼈대 생성: `templates/`, `assets/`, `references/`, `archive/`, `skills/{word,powerpoint,excel,pdf}/`
+* Anthropic 공식 docx/pptx/xlsx/pdf skill을 벤더 중립적인 `skills/`에 가져옴
+* `.claude/skills`, `.agents/skills`를 공통 `skills/`로 연결하는 junction 구조와 `setup-skills.ps1` 추가
 * `.claude/settings.local.json` 권한 스코프 설정: Read/Write/Edit/Glob/Grep/WebSearch는 항상 허용, Bash는 python 실행 + LibreOffice/PowerPoint 탐지 명령으로만 제한, `mcp__ide__executeCode`는 차단
 * `.gitignore` 추가 (`.claude/settings.local.json` 제외)
 * `CLAUDE.md`를 문서 생산용으로 재작성 (기존 코딩 가이드라인 버전 대체)

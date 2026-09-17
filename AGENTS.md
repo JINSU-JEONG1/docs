@@ -19,11 +19,11 @@ Supported formats:
 * Prefer official or primary sources.
 * Use approved templates when available.
 
-## Format rules
+## Skills
 
 Reusable, agent-neutral skills live in `skills/`.
 
-Agent-specific discovery paths such as `.claude/skills` and `.agents/skills` are filesystem links to that canonical directory. Never create duplicate skill copies under an agent-specific directory.
+Agent-specific discovery paths such as `.agents/skills` and `.claude/skills` are filesystem links to that canonical directory. Never create duplicate skill copies under an agent-specific directory.
 
 Use the appropriate format-specific skill:
 
