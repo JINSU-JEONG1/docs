@@ -32,6 +32,7 @@ Precedence:
 | Tone | Conclusion-first Korean declarative style; direct and neutral without honorific expressions |
 | Information density | Balanced: normally use about 65–75% of the available area for content and leave 25–35% as breathing room |
 | Sentence and paragraph style | One judgment or action per sentence; one idea per paragraph; normally 2–4 sentences per paragraph |
+| Reading flow | Lead the reader through a connected path: conclusion → reason → action → exception. Use narrative continuity without literary or decorative prose. |
 | Terminology and naming | Prefer familiar, broadly understood words; use technical terms only when they improve precision and define them on first use when needed |
 | Korean and English usage | Write explanations in Korean; preserve standard product names, identifiers, commands, code, and technical terms when translation would reduce precision |
 
@@ -43,6 +44,12 @@ Precedence:
 - Use `~다` for explanation and `~한다` for procedures. Do not use Korean honorific endings such as `~합니다`, `~드립니다`, or `~바랍니다`.
 - Prefer short, ordinary words over bureaucratic expressions and abstract noun phrases.
 - Place conditions and exceptions beside the statement they qualify.
+- Organize substantial explanations around the reader's questions and actions: what it is, why it matters, when to use it, how to use it, what can go wrong, and how to respond.
+- Move from known information to new information. Reuse the previous sentence's main term as the next sentence's starting point when that makes the relationship easier to follow.
+- State causal, conditional, and contrasting relationships clearly. Join related statements into a short paragraph instead of presenting them as disconnected facts.
+- Use prose for reasoning, context, tradeoffs, and exceptions. Use lists for independent items, genuine sequences, checks, and quick reference.
+- Within a list item, connect the rule, reason, and required action when the reason helps the reader make the right decision.
+- Do not imitate fiction with suspense, metaphor, decorative description, or delayed conclusions. The useful narrative quality is continuity, not drama.
 - Make dates, quantities, units, owners, deadlines, and action items explicit.
 - Ensure that titles and headings alone reveal the document's purpose and reasoning path.
 
@@ -155,12 +162,12 @@ Markdown documents must remain easy to scan as plain text and in a rendered view
 #### Structure
 
 - Use one level-one heading for a standalone title and do not skip heading levels.
+- Start every standalone Markdown document with the title, a document information or version table, and a table of contents, in that order.
 - Write headings that reveal the section's conclusion, subject, or reader task. Avoid vague headings such as `Overview` when a more informative label is available.
 - For reports and explanatory documents, place a short conclusion, decision, or summary immediately after the title. Do not force this section into reference pages where readers arrive to look up a specific item.
 - Organize for layered reading: title → conclusion or summary → descriptive section headings → supporting detail → references.
 - Keep paragraphs to one idea and normally 2–4 sentences. Split a rendered paragraph that grows beyond roughly 3–6 lines when there is a natural idea boundary.
 - Use lists for parallel items, steps, decisions, and action items. Prefer 3–7 items in one group and avoid nesting beyond two levels when another structure is clearer.
-- Add a table of contents only when the document has enough sections or length to make navigation materially faster.
 
 #### Information elements
 
