@@ -29,7 +29,7 @@ Precedence:
 
 | Decision | Direction |
 |---|---|
-| Tone | Conclusion-first Korean declarative style; direct and neutral without honorific expressions |
+| Tone | Conclusion-first Korean writing using polite `~습니다/~입니다` endings; direct and neutral rather than deferential or bureaucratic |
 | Information density | Balanced: normally use about 65–75% of the available area for content and leave 25–35% as breathing room |
 | Sentence and paragraph style | One judgment or action per sentence; one idea per paragraph; normally 2–4 sentences per paragraph |
 | Reading flow | Lead the reader through a connected path: conclusion → reason → action → exception. Use narrative continuity without literary or decorative prose. |
@@ -41,12 +41,12 @@ Precedence:
 - Present the conclusion, recommendation, decision, or required action before supporting detail.
 - Structure detail as conclusion → primary reasons → supporting evidence → references.
 - Distinguish confirmed facts, analysis, recommendations, decisions, and unresolved items.
-- Use `~다` for explanation and `~한다` for procedures. Do not use Korean honorific endings such as `~합니다`, `~드립니다`, or `~바랍니다`.
+- Use polite `~습니다/~입니다` endings throughout, for explanation and procedures alike. Avoid heavier deferential forms such as `~드립니다` or `~바랍니다`, and avoid bureaucratic stiffness — keep the tone direct and neutral rather than formal for its own sake.
 - Prefer short, ordinary words over bureaucratic expressions and abstract noun phrases.
 - Place conditions and exceptions beside the statement they qualify.
 - Organize substantial explanations around the reader's questions and actions: what it is, why it matters, when to use it, how to use it, what can go wrong, and how to respond.
 - Move from known information to new information. Reuse the previous sentence's main term as the next sentence's starting point when that makes the relationship easier to follow.
-- State causal, conditional, and contrasting relationships clearly. Join related statements into a short paragraph instead of presenting them as disconnected facts.
+- State causal, conditional, and contrasting relationships clearly. Join related statements into a short paragraph instead of presenting them as disconnected facts. Getting the polite ending right is not enough — a paragraph where every sentence is grammatically correct but reads as a flat list of facts ("뚝뚝 끊기는" prose) still fails this rule. Use connective words when sentences are actually related: `그래서`/`그러므로` for a result, `이렇게 ~때문에`/`~므로` to fold a cause into the next sentence, `다만`/`그 덕분에` for a contrast or benefit. When a paragraph turns out to really be a flat set of parallel facts (e.g. one license per version), do not force it into one run-on sentence — pull it into a small table instead (see the table rule below). A standalone caution that does not connect to its neighbors usually reads better lifted into a `> **주의:**` callout than left as a bare paragraph line.
 - Use prose for reasoning, context, tradeoffs, and exceptions. Use lists for independent items, genuine sequences, checks, and quick reference.
 - Within a list item, connect the rule, reason, and required action when the reason helps the reader make the right decision.
 - Do not imitate fiction with suspense, metaphor, decorative description, or delayed conclusions. The useful narrative quality is continuity, not drama.
@@ -134,7 +134,7 @@ Semantic colors are exceptions to the grayscale-and-lavender system. Use them on
 - Use one approved icon family within a document. Do not mix unrelated outline, filled, duotone, 3D, or hand-drawn styles.
 - Use `#202026` or `#666672` by default and reserve `#8B72BE` for meaningful emphasis.
 - Use icons to improve navigation, recognition, or explanation. Do not attach an icon to every heading or paragraph as decoration.
-- Avoid emojis, novelty symbols, ambiguous metaphors, and icons with unnecessary internal detail.
+- A small set of plain marker emoji (e.g. ⚠️, ✅, 📌) may be used sparingly as section or callout markers when they aid scanning. Avoid novelty symbols, ambiguous metaphors, icons with unnecessary internal detail, and overusing markers to the point of visual clutter.
 - Pair unfamiliar icons with a text label. Never rely on icon shape or color alone to communicate critical meaning.
 
 ### Images and diagrams
@@ -193,6 +193,7 @@ Markdown documents must remain easy to scan as plain text and in a rendered view
 
 - Confirm that the title, opening summary, and section headings communicate the document's purpose and conclusion during a short scan.
 - Check heading hierarchy, list numbering, table structure, code fences, image paths, and repository-local links.
+- Re-read each prose paragraph on its own: if adjacent sentences read as independent facts rather than a connected explanation, add the connector or restructure per the reading-flow rule above before moving on.
 - Preview the rendered result when a renderer is available, but also inspect the raw Markdown for maintainability.
 
 ### Word
