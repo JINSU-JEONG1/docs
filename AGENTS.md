@@ -53,7 +53,7 @@ Work is split by owner at the top level:
 
 Inside an owner folder, organize work in two numbered levels:
 
-* `<N>0.<Category>/` — main category, numbered by tens (`10.Project`, `20.Data`)
+* `<N>0.<Category>/` — main category, numbered by tens (`10.Project`, `20.Tech`)
 * `<N>0.<Category>/<N><n>.<Topic>/` — subcategory; its tens digit matches the parent (`10.Project/11.SPAS2.0`)
 
 Do not place a subcategory number such as `21.` directly under an owner folder, and do not give a subcategory a tens number such as `30.`. Below the subcategory level, use descriptive folder names without numbers.
@@ -66,12 +66,13 @@ Teia/
 ├── 10.Project/
 │   ├── README.md          # what belongs here and the subcategory list
 │   ├── 11.SPAS2.0/
-│   │   └── DB/            # no number below the subcategory level
 │   └── 12.VCC/
-└── 20.Data/
+└── 20.Tech/
     ├── README.md
-    ├── 21.RDB/
-    └── 22.In-Memory/
+    ├── 21.Database/
+    │   ├── RDB/           # no number below the subcategory level
+    │   └── In-Memory/
+    └── 22.Frontend/
 ```
 
 Each owner folder and main category folder has a `README.md`. Every other folder that must exist before it has content gets a `.keep` file; under `Teia/` the file only marks intent, because the folder is not tracked.
