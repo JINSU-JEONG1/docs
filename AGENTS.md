@@ -77,11 +77,13 @@ Teia/
 
 Each owner folder and main category folder has a `README.md`. Every other folder that must exist before it has content gets a `.keep` file; under `Teia/` the file only marks intent, because the folder is not tracked.
 
-When a folder holds a deliverable in progress, split it by stage:
+Mark a document's stage with a filename prefix. Do not create stage folders such as `source/`, `working/`, or `final/`.
 
-* `source/` — original inputs
-* `working/` — editable work
-* `final/` — completed deliverables
+* `[draft]` — 초안
+* `[wip]` — 진행 중
+* `[final]` — 최종본
+
+Write the prefix directly before the name with no space, such as `[draft]fe-strategy-ko.md`. Rename the file when its stage changes, and update links that point to it. In Markdown links, wrap such a path in angle brackets, such as `[설계](<[draft]design.md>)`. Original inputs received from others keep their original names without a prefix.
 
 Approved templates live in `templates/<format>/` — check there before designing a layout from scratch.
 
