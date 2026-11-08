@@ -198,7 +198,18 @@ Markdown documents must remain easy to scan as plain text and in a rendered view
 
 ### Word
 
-Undecided.
+기준 샘플은 2026-11-06에 선택했습니다.
+
+- **문서 모양:** [Microsoft Professional Business Report](https://word.cloud.microsoft/create/en/business-templates/)의 레이아웃과 제목·본문 구분을 참고합니다.
+- **기술 문서 구성:** [Smartsheet Software Technical Specification](https://www.smartsheet.com/free-technical-specification-templates)의 다음 구성을 기본으로 삼습니다. 문서 목적에 필요한 항목만 사용합니다.
+  1. 개요 — 목적, 독자, 범위, 참고 자료
+  2. 전체 설명 — 배경, 주요 기능, 운영 환경, 제약과 가정
+  3. 시스템 기능
+  4. 외부 인터페이스
+  5. 비기능 요구사항 — 성능, 안전, 보안, 품질
+  6. 부록
+
+원본 파일은 `templates/word/reference/`에 보관합니다. 한글 문서에 적용할 세부 서식은 두 샘플을 결합한 초안을 보고 정합니다.
 
 ### PowerPoint
 
