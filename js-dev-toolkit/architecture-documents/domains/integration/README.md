@@ -28,7 +28,7 @@
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [Event-Driven](<communication-and-processing/event-driven/README.md>) | 개요, 패턴, 메시지 브로커, 신뢰성의 4개 본문이 있습니다. | 본문 있음 |
+| [Event-Driven](<01-communication-and-processing/event-driven/README.md>) | 개요, 패턴, 메시지 브로커, 신뢰성의 4개 본문이 있습니다. | 본문 있음 |
 | [API와 계약](<[draft]01-api-and-contracts.md>) | REST·RPC·GraphQL, 버전 관리와 호환성 유지 기준을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
 | [API Gateway와 BFF](<[draft]02-gateway-and-bff.md>) | 공통 진입점, 라우팅, 인증 연계와 클라이언트별 응답 구성을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
 | [메시징과 브로커](<[draft]03-messaging-and-brokers.md>) | Queue·Pub/Sub·Request-Reply와 브로커 선택 시 확인할 전달 특성을 다룰 예정입니다. | 작성 예정 · 빈 파일 |

@@ -57,7 +57,7 @@
 
 ## 현재 작성 상태
 
-애플리케이션 영역에는 대표 문서인 [계층형 구조](<application/application-structure/[draft]01-layered.md>)와 MSA, Modular Monolith, Hexagonal / Clean, Micro-Frontends의 본문이 있습니다. 데이터 영역에는 [데이터 모델링과 소유권](<data/[draft]01-modeling-and-ownership.md>), 연계 영역에는 Event-Driven 본문이 있습니다.
+애플리케이션 영역에는 대표 문서인 [계층형 구조](<application/02-02-application-structure/[draft]01-layered.md>)와 MSA, Modular Monolith, Hexagonal / Clean, Micro-Frontends의 본문이 있습니다. 데이터 영역에는 [데이터 모델링과 소유권](<data/[draft]01-modeling-and-ownership.md>), 연계 영역에는 Event-Driven 본문이 있습니다.
 
 솔루션의 [전체 흐름 설계](<../solution/[draft]03-end-to-end-design.md>)부터 계층형 구조와 데이터 모델링을 이어 읽으면 같은 주문 예제로 영역 간 관계를 이해할 수 있습니다. 나머지 새 주제 파일은 작성 예정이며 각 영역 README에 범위를 표시했습니다.
 

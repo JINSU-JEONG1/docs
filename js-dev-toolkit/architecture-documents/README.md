@@ -32,15 +32,15 @@
 | 주제 | 이런 내용을 찾을 때 읽습니다 | 본문 수 |
 |---|---|---:|
 | [전체 흐름 설계](<solution/[draft]03-end-to-end-design.md>) | 주문부터 결제 결과 반영까지의 책임·정상 흐름·실패 복구 | 1 |
-| [계층형 구조](<domains/application/application-structure/[draft]01-layered.md>) | 요청 처리·업무 규칙·저장 및 외부 연계의 역할 분담 | 1 |
+| [계층형 구조](<domains/application/02-02-application-structure/[draft]01-layered.md>) | 요청 처리·업무 규칙·저장 및 외부 연계의 역할 분담 | 1 |
 | [데이터 모델링과 소유권](<domains/data/[draft]01-modeling-and-ownership.md>) | 주문 모델, 원본과 변경 책임, 무결성·트랜잭션 경계 | 1 |
-| [Modular Monolith](domains/application/system-structure/modular-monolith/README.md) | 단일 애플리케이션 안의 모듈 경계, 의존성 규칙과 MSA 비교 | 4 |
-| [MSA](domains/application/system-structure/msa/README.md) | 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관측과 배포 | 7 |
-| [Hexagonal / Clean](domains/application/application-structure/hexagonal-clean/README.md) | 업무 로직과 외부 기술의 경계, 의존성 방향과 구현 예제 | 4 |
-| [Event-Driven](domains/integration/communication-and-processing/event-driven/README.md) | 이벤트 기반 연계, 메시지 브로커와 신뢰성 | 4 |
-| [Micro-Frontends](domains/application/frontend/micro-frontends/README.md) | 프런트엔드 분리, 통합 방식, Module Federation과 앱 간 통신 | 4 |
+| [Modular Monolith](domains/application/01-01-system-structure/modular-monolith/README.md) | 단일 애플리케이션 안의 모듈 경계, 의존성 규칙과 MSA 비교 | 4 |
+| [MSA](domains/application/01-01-system-structure/msa/README.md) | 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관측과 배포 | 7 |
+| [Hexagonal / Clean](domains/application/02-02-application-structure/hexagonal-clean/README.md) | 업무 로직과 외부 기술의 경계, 의존성 방향과 구현 예제 | 4 |
+| [Event-Driven](domains/integration/01-01-communication-and-processing/event-driven/README.md) | 이벤트 기반 연계, 메시지 브로커와 신뢰성 | 4 |
+| [Micro-Frontends](domains/application/03-03-frontend/micro-frontends/README.md) | 프런트엔드 분리, 통합 방식, Module Federation과 앱 간 통신 | 4 |
 
-**대표 문서 읽는 순서:** [전체 흐름 설계](<solution/[draft]03-end-to-end-design.md>) → [계층형 구조](<domains/application/application-structure/[draft]01-layered.md>) → [데이터 모델링과 소유권](<domains/data/[draft]01-modeling-and-ownership.md>)를 읽으면 같은 주문 예제를 시스템·코드·데이터 관점에서 연결할 수 있습니다.
+**대표 문서 읽는 순서:** [전체 흐름 설계](<solution/[draft]03-end-to-end-design.md>) → [계층형 구조](<domains/application/02-02-application-structure/[draft]01-layered.md>) → [데이터 모델링과 소유권](<domains/data/[draft]01-modeling-and-ownership.md>)를 읽으면 같은 주문 예제를 시스템·코드·데이터 관점에서 연결할 수 있습니다.
 
 **기존 주제 확장 순서:** Modular Monolith → MSA로 시스템 분리 관점을 비교한 뒤, Hexagonal / Clean으로 내부 구조를 살펴봅니다. 그다음 이벤트 연계가 궁금하면 Event-Driven, 화면 통합이 궁금하면 Micro-Frontends로 이동합니다. 이는 이 문서 모음을 읽는 순서이며 특정 구조를 도입하라는 의미는 아닙니다.
 
@@ -61,20 +61,20 @@ architecture/
 ├── solution/                         개별 솔루션의 요구·전체 구성·전환
 ├── domains/                          기술 영역별 설계
 │   ├── application/                  애플리케이션 경계와 내부 구조
-│   │   ├── system-structure/         모놀리스·MSA·SOA 등 시스템 구조
-│   │   ├── application-structure/    계층·의존성·기능 단위 코드 구조
-│   │   └── frontend/                 화면 구성·렌더링·클라이언트 앱
+│   │   ├── 01-system-structure/         모놀리스·MSA·SOA 등 시스템 구조
+│   │   ├── 02-application-structure/    계층·의존성·기능 단위 코드 구조
+│   │   └── 03-frontend/                 화면 구성·렌더링·클라이언트 앱
 │   ├── data/                         모델·저장·일관성·분석·수명주기
 │   ├── integration/                  API·메시지·이벤트·업무 흐름
-│   │   └── communication-and-processing/
+│   │   └── 01-communication-and-processing/
 │   │       └── event-driven/         기존 이벤트 기반 설계 문서
 │   ├── infrastructure/               실행·네트워크·배포·운영·복구
 │   └── security/                     위협·권한·보호·감사
 └── practice/                         설계 작업에 쓰는 방법
-    ├── design-methods/               DDD·EventStorming
-    ├── documentation/                C4·ADR
-    ├── evaluation/                   설계 검토·자동 점검
-    └── evolution/                    기술 부채·점진적 개선
+    ├── 01-design-methods/               DDD·EventStorming
+    ├── 02-documentation/                C4·ADR
+    ├── 03-evaluation/                   설계 검토·자동 점검
+    └── 04-evolution/                    기술 부채·점진적 개선
 ```
 
 예를 들어 MSA는 시스템 구조, Clean은 애플리케이션 내부의 의존성 구조를 살펴보는 주제입니다. 이 문서 모음에서는 두 개념을 다른 수준으로 분류합니다. DDD는 설계 방법, C4는 구조 표현 방법, ADR은 결정 기록 방식으로 분류하며, 특정 시스템 구조와 일대일로 경쟁하는 선택지로 놓지 않습니다.
@@ -132,18 +132,18 @@ architecture/
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [MSA](<domains/application/system-structure/msa/README.md>) | 개요부터 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관찰가능성, 배포까지 7개 본문이 있습니다. | 본문 있음 |
-| [Modular Monolith](<domains/application/system-structure/modular-monolith/README.md>) | 개요, 모듈 설계, 의존성 규칙, MSA 비교의 4개 본문이 있습니다. | 본문 있음 |
-| [Hexagonal / Clean](<domains/application/application-structure/hexagonal-clean/README.md>) | 개요, Hexagonal, Clean Architecture, 구현 예제의 4개 본문이 있습니다. | 본문 있음 |
-| [Micro-Frontends](<domains/application/frontend/micro-frontends/README.md>) | 개요, 통합 방식, Module Federation, 앱 간 통신의 4개 본문이 있습니다. | 본문 있음 |
-| [모놀리스와 Client-Server](<domains/application/system-structure/[draft]01-monolith-and-client-server.md>) | 단일 애플리케이션과 클라이언트·서버 구조의 기본 책임 및 배포 경계를 다룰 예정입니다. | 작성 예정 |
-| [SOA](<domains/application/system-structure/[draft]02-soa.md>) | 서비스 계약, 재사용, 기업 내 연계와 MSA 비교 관점을 다룰 예정입니다. | 작성 예정 |
-| [계층형 구조](<domains/application/application-structure/[draft]01-layered.md>) | 주문 예제로 계층별 책임, 호출 규칙, 트랜잭션 경계와 적용 조건을 설명합니다. | 본문 있음 |
-| [Vertical Slice](<domains/application/application-structure/[draft]02-vertical-slice.md>) | 기능 단위로 코드를 묶는 방식과 기능 사이의 중복·공통화 기준을 다룰 예정입니다. | 작성 예정 |
-| [Microkernel](<domains/application/application-structure/[draft]03-microkernel.md>) | 핵심 기능과 플러그인의 경계, 확장 계약, 플러그인 수명주기를 다룰 예정입니다. | 작성 예정 |
-| [프런트엔드 앱 모델](<domains/application/frontend/[draft]01-application-models.md>) | SPA, MPA, Islands의 구성 방식과 적용 조건을 비교할 예정입니다. | 작성 예정 |
-| [렌더링 전략](<domains/application/frontend/[draft]02-rendering-strategies.md>) | CSR, SSR, SSG와 하이드레이션의 역할 및 렌더링 위치를 다룰 예정입니다. | 작성 예정 |
-| [모바일과 데스크톱 앱](<domains/application/frontend/[draft]03-mobile-and-desktop.md>) | 플랫폼별 구성, 오프라인 동작, 로컬 데이터와 업데이트 전략을 다룰 예정입니다. | 작성 예정 |
+| [MSA](<domains/application/01-01-system-structure/msa/README.md>) | 개요부터 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관찰가능성, 배포까지 7개 본문이 있습니다. | 본문 있음 |
+| [Modular Monolith](<domains/application/01-01-system-structure/modular-monolith/README.md>) | 개요, 모듈 설계, 의존성 규칙, MSA 비교의 4개 본문이 있습니다. | 본문 있음 |
+| [Hexagonal / Clean](<domains/application/02-02-application-structure/hexagonal-clean/README.md>) | 개요, Hexagonal, Clean Architecture, 구현 예제의 4개 본문이 있습니다. | 본문 있음 |
+| [Micro-Frontends](<domains/application/03-03-frontend/micro-frontends/README.md>) | 개요, 통합 방식, Module Federation, 앱 간 통신의 4개 본문이 있습니다. | 본문 있음 |
+| [모놀리스와 Client-Server](<domains/application/01-01-system-structure/[draft]01-monolith-and-client-server.md>) | 단일 애플리케이션과 클라이언트·서버 구조의 기본 책임 및 배포 경계를 다룰 예정입니다. | 작성 예정 |
+| [SOA](<domains/application/01-01-system-structure/[draft]02-soa.md>) | 서비스 계약, 재사용, 기업 내 연계와 MSA 비교 관점을 다룰 예정입니다. | 작성 예정 |
+| [계층형 구조](<domains/application/02-02-application-structure/[draft]01-layered.md>) | 주문 예제로 계층별 책임, 호출 규칙, 트랜잭션 경계와 적용 조건을 설명합니다. | 본문 있음 |
+| [Vertical Slice](<domains/application/02-02-application-structure/[draft]02-vertical-slice.md>) | 기능 단위로 코드를 묶는 방식과 기능 사이의 중복·공통화 기준을 다룰 예정입니다. | 작성 예정 |
+| [Microkernel](<domains/application/02-02-application-structure/[draft]03-microkernel.md>) | 핵심 기능과 플러그인의 경계, 확장 계약, 플러그인 수명주기를 다룰 예정입니다. | 작성 예정 |
+| [프런트엔드 앱 모델](<domains/application/03-03-frontend/[draft]01-application-models.md>) | SPA, MPA, Islands의 구성 방식과 적용 조건을 비교할 예정입니다. | 작성 예정 |
+| [렌더링 전략](<domains/application/03-03-frontend/[draft]02-rendering-strategies.md>) | CSR, SSR, SSG와 하이드레이션의 역할 및 렌더링 위치를 다룰 예정입니다. | 작성 예정 |
+| [모바일과 데스크톱 앱](<domains/application/03-03-frontend/[draft]03-mobile-and-desktop.md>) | 플랫폼별 구성, 오프라인 동작, 로컬 데이터와 업데이트 전략을 다룰 예정입니다. | 작성 예정 |
 
 ### 데이터 아키텍처
 
@@ -165,7 +165,7 @@ architecture/
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [Event-Driven](<domains/integration/communication-and-processing/event-driven/README.md>) | 개요, 패턴, 메시지 브로커, 신뢰성의 4개 본문이 있습니다. | 본문 있음 |
+| [Event-Driven](<domains/integration/01-01-communication-and-processing/event-driven/README.md>) | 개요, 패턴, 메시지 브로커, 신뢰성의 4개 본문이 있습니다. | 본문 있음 |
 | [API와 계약](<domains/integration/[draft]01-api-and-contracts.md>) | REST·RPC·GraphQL, 버전 관리와 호환성 유지 기준을 다룰 예정입니다. | 작성 예정 |
 | [API Gateway와 BFF](<domains/integration/[draft]02-gateway-and-bff.md>) | 공통 진입점, 라우팅, 인증 연계와 클라이언트별 응답 구성을 다룰 예정입니다. | 작성 예정 |
 | [메시징과 브로커](<domains/integration/[draft]03-messaging-and-brokers.md>) | Queue·Pub/Sub·Request-Reply와 브로커 선택 시 확인할 전달 특성을 다룰 예정입니다. | 작성 예정 |
@@ -209,13 +209,13 @@ architecture/
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [DDD](<practice/design-methods/[draft]01-ddd.md>) | 업무 모델, Bounded Context, Context Map과 Aggregate를 다룰 예정입니다. | 작성 예정 |
-| [EventStorming](<practice/design-methods/[draft]02-event-storming.md>) | 업무 이벤트를 중심으로 흐름·명령·정책과 경계를 탐색할 예정입니다. | 작성 예정 |
-| [C4와 아키텍처 뷰](<practice/documentation/[draft]01-c4-and-views.md>) | 시스템 맥락·컨테이너·컴포넌트·코드 및 동작·배포 관점을 다룰 예정입니다. | 작성 예정 |
-| [ADR: 아키텍처 결정 기록](<practice/documentation/[draft]02-adr.md>) | 문제 상황, 선택지, 결정 이유와 결과를 남기는 형식을 다룰 예정입니다. | 작성 예정 |
-| [아키텍처 검토](<practice/evaluation/[draft]01-architecture-review.md>) | 품질 시나리오, 이해관계자 검토, 위험과 대안의 평가를 다룰 예정입니다. | 작성 예정 |
-| [아키텍처 자동 점검](<practice/evaluation/[draft]02-fitness-functions.md>) | 의존성·성능·보안 등 구조적 조건을 지속적으로 확인하는 방법을 다룰 예정입니다. | 작성 예정 |
-| [기술 부채와 진화](<practice/evolution/[draft]01-technical-debt.md>) | 설계 부채의 영향, 개선 우선순위와 점진적인 변경 계획을 다룰 예정입니다. | 작성 예정 |
+| [DDD](<practice/01-01-design-methods/[draft]01-ddd.md>) | 업무 모델, Bounded Context, Context Map과 Aggregate를 다룰 예정입니다. | 작성 예정 |
+| [EventStorming](<practice/01-01-design-methods/[draft]02-event-storming.md>) | 업무 이벤트를 중심으로 흐름·명령·정책과 경계를 탐색할 예정입니다. | 작성 예정 |
+| [C4와 아키텍처 뷰](<practice/02-02-documentation/[draft]01-c4-and-views.md>) | 시스템 맥락·컨테이너·컴포넌트·코드 및 동작·배포 관점을 다룰 예정입니다. | 작성 예정 |
+| [ADR: 아키텍처 결정 기록](<practice/02-02-documentation/[draft]02-adr.md>) | 문제 상황, 선택지, 결정 이유와 결과를 남기는 형식을 다룰 예정입니다. | 작성 예정 |
+| [아키텍처 검토](<practice/03-03-evaluation/[draft]01-architecture-review.md>) | 품질 시나리오, 이해관계자 검토, 위험과 대안의 평가를 다룰 예정입니다. | 작성 예정 |
+| [아키텍처 자동 점검](<practice/03-03-evaluation/[draft]02-fitness-functions.md>) | 의존성·성능·보안 등 구조적 조건을 지속적으로 확인하는 방법을 다룰 예정입니다. | 작성 예정 |
+| [기술 부채와 진화](<practice/04-04-evolution/[draft]01-technical-debt.md>) | 설계 부채의 영향, 개선 우선순위와 점진적인 변경 계획을 다룰 예정입니다. | 작성 예정 |
 
 ## 새 문서를 추가하거나 수정하는 방법
 

@@ -28,22 +28,22 @@
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [MSA](<system-structure/msa/README.md>) | 개요부터 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관찰가능성, 배포까지 7개 본문이 있습니다. | 본문 있음 |
-| [Modular Monolith](<system-structure/modular-monolith/README.md>) | 개요, 모듈 설계, 의존성 규칙, MSA 비교의 4개 본문이 있습니다. | 본문 있음 |
-| [Hexagonal / Clean](<application-structure/hexagonal-clean/README.md>) | 개요, Hexagonal, Clean Architecture, 구현 예제의 4개 본문이 있습니다. | 본문 있음 |
-| [Micro-Frontends](<frontend/micro-frontends/README.md>) | 개요, 통합 방식, Module Federation, 앱 간 통신의 4개 본문이 있습니다. | 본문 있음 |
-| [모놀리스와 Client-Server](<system-structure/[draft]01-monolith-and-client-server.md>) | 단일 애플리케이션과 클라이언트·서버 구조의 기본 책임 및 배포 경계를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [SOA](<system-structure/[draft]02-soa.md>) | 서비스 계약, 재사용, 기업 내 연계와 MSA 비교 관점을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [계층형 구조](<application-structure/[draft]01-layered.md>) | 주문 예제로 계층별 책임, 호출 규칙, 트랜잭션 경계와 적용 조건을 설명합니다. | 본문 있음 |
-| [Vertical Slice](<application-structure/[draft]02-vertical-slice.md>) | 기능 단위로 코드를 묶는 방식과 기능 사이의 중복·공통화 기준을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [Microkernel](<application-structure/[draft]03-microkernel.md>) | 핵심 기능과 플러그인의 경계, 확장 계약, 플러그인 수명주기를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [프런트엔드 앱 모델](<frontend/[draft]01-application-models.md>) | SPA, MPA, Islands의 구성 방식과 적용 조건을 비교할 예정입니다. | 작성 예정 · 빈 파일 |
-| [렌더링 전략](<frontend/[draft]02-rendering-strategies.md>) | CSR, SSR, SSG와 하이드레이션의 역할 및 렌더링 위치를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [모바일과 데스크톱 앱](<frontend/[draft]03-mobile-and-desktop.md>) | 플랫폼별 구성, 오프라인 동작, 로컬 데이터와 업데이트 전략을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [MSA](<01-system-structure/msa/README.md>) | 개요부터 서비스 분해, 통신, 데이터 관리, 장애 복원성, 관찰가능성, 배포까지 7개 본문이 있습니다. | 본문 있음 |
+| [Modular Monolith](<01-system-structure/modular-monolith/README.md>) | 개요, 모듈 설계, 의존성 규칙, MSA 비교의 4개 본문이 있습니다. | 본문 있음 |
+| [Hexagonal / Clean](<02-application-structure/hexagonal-clean/README.md>) | 개요, Hexagonal, Clean Architecture, 구현 예제의 4개 본문이 있습니다. | 본문 있음 |
+| [Micro-Frontends](<03-frontend/micro-frontends/README.md>) | 개요, 통합 방식, Module Federation, 앱 간 통신의 4개 본문이 있습니다. | 본문 있음 |
+| [모놀리스와 Client-Server](<01-system-structure/[draft]01-monolith-and-client-server.md>) | 단일 애플리케이션과 클라이언트·서버 구조의 기본 책임 및 배포 경계를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [SOA](<01-system-structure/[draft]02-soa.md>) | 서비스 계약, 재사용, 기업 내 연계와 MSA 비교 관점을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [계층형 구조](<02-application-structure/[draft]01-layered.md>) | 주문 예제로 계층별 책임, 호출 규칙, 트랜잭션 경계와 적용 조건을 설명합니다. | 본문 있음 |
+| [Vertical Slice](<02-application-structure/[draft]02-vertical-slice.md>) | 기능 단위로 코드를 묶는 방식과 기능 사이의 중복·공통화 기준을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [Microkernel](<02-application-structure/[draft]03-microkernel.md>) | 핵심 기능과 플러그인의 경계, 확장 계약, 플러그인 수명주기를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [프런트엔드 앱 모델](<03-frontend/[draft]01-application-models.md>) | SPA, MPA, Islands의 구성 방식과 적용 조건을 비교할 예정입니다. | 작성 예정 · 빈 파일 |
+| [렌더링 전략](<03-frontend/[draft]02-rendering-strategies.md>) | CSR, SSR, SSG와 하이드레이션의 역할 및 렌더링 위치를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [모바일과 데스크톱 앱](<03-frontend/[draft]03-mobile-and-desktop.md>) | 플랫폼별 구성, 오프라인 동작, 로컬 데이터와 업데이트 전략을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
 
 ## 읽는 순서와 활용 방법
 
-1. [01 계층형 구조](<application-structure/[draft]01-layered.md>)로 요청 처리·업무 규칙·저장의 책임을 먼저 파악합니다.
+1. [01 계층형 구조](<02-application-structure/[draft]01-layered.md>)로 요청 처리·업무 규칙·저장의 책임을 먼저 파악합니다.
 2. Modular Monolith와 MSA를 읽고 시스템 분리의 기준을 비교합니다.
 3. Hexagonal / Clean을 읽고 업무 로직과 외부 기술의 경계를 살펴봅니다.
 4. 화면을 여러 팀이 나누어 개발하는 상황이라면 Micro-Frontends의 통합과 통신 문서를 읽습니다.

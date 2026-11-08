@@ -113,7 +113,7 @@ Controller가 먼저 저장하고 Service가 나중에 결제한다는 식으로
 | Service 하나에 여러 업무가 계속 추가됩니다. | 기능·사용 사례별로 나누고 공통 업무 규칙의 소유자를 정합니다. |
 | 저장소나 외부 API가 업무 코드에 강하게 스며듭니다. | [Hexagonal / Clean](hexagonal-clean/README.md)의 경계와 의존성 역전을 함께 검토합니다. |
 | 기능 하나를 바꿀 때 여러 공통 계층이 함께 흔들립니다. | 기능 중심으로 변경을 모으는 Vertical Slice를 검토합니다. |
-| 여러 기능을 같은 배포 단위에서 독립적으로 관리해야 합니다. | [Modular Monolith](../system-structure/modular-monolith/README.md)의 모듈 경계를 함께 검토합니다. |
+| 여러 기능을 같은 배포 단위에서 독립적으로 관리해야 합니다. | [Modular Monolith](../01-01-system-structure/modular-monolith/README.md)의 모듈 경계를 함께 검토합니다. |
 
 계층형 구조와 모듈 구분은 함께 사용할 수 있습니다. 반면 서비스의 독립 배포 여부는 코드 계층과 다른 결정이므로, 계층 분리가 곧 MSA 전환을 의미하지는 않습니다.
 

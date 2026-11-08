@@ -22,7 +22,7 @@
 
 전체 흐름 설계는 하나의 사용자 요청이 어떤 구성요소를 거쳐 처리되고, 어디에 결과가 남으며, 실패했을 때 어떻게 회복하는지 설명하는 문서입니다. 구성도에 서버 이름을 적는 것에서 끝내지 않고 **책임·계약·상태 변화·실패 대응**을 연결해야 구현과 운영에 사용할 수 있습니다.
 
-이 문서는 주문과 외부 결제를 예로 든 솔루션 설계 입문 자료입니다. 여기서 시스템 전체의 흐름을 확인한 뒤 [계층형 구조](<../domains/application/application-structure/[draft]01-layered.md>)에서 코드의 책임을, [데이터 모델링과 소유권](<../domains/data/[draft]01-modeling-and-ownership.md>)에서 저장 구조를 이어서 살펴볼 수 있습니다.
+이 문서는 주문과 외부 결제를 예로 든 솔루션 설계 입문 자료입니다. 여기서 시스템 전체의 흐름을 확인한 뒤 [계층형 구조](<../domains/application/02-02-application-structure/[draft]01-layered.md>)에서 코드의 책임을, [데이터 모델링과 소유권](<../domains/data/[draft]01-modeling-and-ownership.md>)에서 저장 구조를 이어서 살펴볼 수 있습니다.
 
 ## 예제의 범위와 가정
 
@@ -124,7 +124,7 @@ flowchart LR
 
 ## 관련 문서와 근거
 
-- [계층형 구조](<../domains/application/application-structure/[draft]01-layered.md>): 이 예제를 내부 코드의 책임으로 나눕니다.
+- [계층형 구조](<../domains/application/02-02-application-structure/[draft]01-layered.md>): 이 예제를 내부 코드의 책임으로 나눕니다.
 - [데이터 모델링과 소유권](<../domains/data/[draft]01-modeling-and-ownership.md>): 주문·항목·결제 시도의 모델과 변경 책임을 정리합니다.
 - [C4 다이어그램 안내](https://c4model.com/diagrams): 설계 그림의 설명 수준과 관점을 구분하는 근거입니다.
 - [Compensating Transaction 패턴](https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction): 외부 효과를 되돌리는 보상 처리의 성격을 설명합니다.

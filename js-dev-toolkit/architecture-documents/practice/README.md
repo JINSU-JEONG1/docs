@@ -28,13 +28,13 @@
 
 | 주제 | 내용 또는 작성 예정 범위 | 상태 |
 |---|---|---|
-| [DDD](<design-methods/[draft]01-ddd.md>) | 업무 모델, Bounded Context, Context Map과 Aggregate를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [EventStorming](<design-methods/[draft]02-event-storming.md>) | 업무 이벤트를 중심으로 흐름·명령·정책과 경계를 탐색할 예정입니다. | 작성 예정 · 빈 파일 |
-| [C4와 아키텍처 뷰](<documentation/[draft]01-c4-and-views.md>) | 시스템 맥락·컨테이너·컴포넌트·코드 및 동작·배포 관점을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [ADR: 아키텍처 결정 기록](<documentation/[draft]02-adr.md>) | 문제 상황, 선택지, 결정 이유와 결과를 남기는 형식을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [아키텍처 검토](<evaluation/[draft]01-architecture-review.md>) | 품질 시나리오, 이해관계자 검토, 위험과 대안의 평가를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [아키텍처 자동 점검](<evaluation/[draft]02-fitness-functions.md>) | 의존성·성능·보안 등 구조적 조건을 지속적으로 확인하는 방법을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
-| [기술 부채와 진화](<evolution/[draft]01-technical-debt.md>) | 설계 부채의 영향, 개선 우선순위와 점진적인 변경 계획을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [DDD](<01-design-methods/[draft]01-ddd.md>) | 업무 모델, Bounded Context, Context Map과 Aggregate를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [EventStorming](<01-design-methods/[draft]02-event-storming.md>) | 업무 이벤트를 중심으로 흐름·명령·정책과 경계를 탐색할 예정입니다. | 작성 예정 · 빈 파일 |
+| [C4와 아키텍처 뷰](<02-documentation/[draft]01-c4-and-views.md>) | 시스템 맥락·컨테이너·컴포넌트·코드 및 동작·배포 관점을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [ADR: 아키텍처 결정 기록](<02-documentation/[draft]02-adr.md>) | 문제 상황, 선택지, 결정 이유와 결과를 남기는 형식을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [아키텍처 검토](<03-evaluation/[draft]01-architecture-review.md>) | 품질 시나리오, 이해관계자 검토, 위험과 대안의 평가를 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [아키텍처 자동 점검](<03-evaluation/[draft]02-fitness-functions.md>) | 의존성·성능·보안 등 구조적 조건을 지속적으로 확인하는 방법을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
+| [기술 부채와 진화](<04-evolution/[draft]01-technical-debt.md>) | 설계 부채의 영향, 개선 우선순위와 점진적인 변경 계획을 다룰 예정입니다. | 작성 예정 · 빈 파일 |
 
 ## 읽는 순서와 활용 방법
 

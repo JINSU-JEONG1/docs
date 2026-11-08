@@ -160,7 +160,7 @@ erDiagram
 ## 관련 문서와 근거
 
 - [전체 흐름 설계](<../../solution/[draft]03-end-to-end-design.md>): 데이터가 생성·변경되는 업무 흐름과 장애 복구를 설명합니다.
-- [계층형 구조](<../application/application-structure/[draft]01-layered.md>): 데이터 접근과 업무 규칙을 코드 책임으로 구분합니다.
+- [계층형 구조](<../application/02-02-application-structure/[draft]01-layered.md>): 데이터 접근과 업무 규칙을 코드 책임으로 구분합니다.
 - [PostgreSQL 제약조건](https://www.postgresql.org/docs/current/ddl-constraints.html): 무결성 제약의 기능과 한계를 확인하는 근거입니다.
 - [AWS Database-per-service](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/database-per-service.html): 서비스를 분리할 때 데이터 소유권과 연계 복잡성을 검토하는 자료입니다.
 
