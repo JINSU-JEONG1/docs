@@ -1,35 +1,22 @@
-# 개발 자료 모음
+﻿# 개발 자료 모음
 
-| 항목 | 내용 |
+개발 과정에서 참고하는 설계·구현·검증·운영 자료와 문서 양식을 모읍니다.
+
+| 최상위 영역 | 다루는 내용 |
 |---|---|
-| 버전 | v0.4 |
-| 상태 | 초안 |
-| 수정일 | 2026-11-21 |
-| 작성자 | Codex |
+| [architecture](architecture/README.md) | 시스템 구조와 기술 선택에 대한 설계 판단 |
+| [frontend](frontend/README.md) | 웹 화면과 클라이언트 구현 |
+| [backend](backend/README.md) | 서버 애플리케이션과 업무 기능 구현 |
+| [api](api/README.md) | 시스템 간 인터페이스와 계약 |
+| [auth](auth/README.md) | 사용자·서비스 인증과 접근 권한 |
+| [database](database/README.md) | 데이터베이스 스키마·쿼리·마이그레이션 구현 |
+| [testing](testing/README.md) | 테스트 전략과 검증 방법 |
+| [quality](quality/README.md) | 코드 품질과 자동 점검 |
+| [infrastructure](infrastructure/README.md) | 실행·네트워크·배포 기반 구성 |
+| [operations](operations/README.md) | 배포 후 운영과 장애 대응 |
+| [development-process](development-process/README.md) | 계획부터 릴리스까지의 개발 흐름 |
+| [templates](templates/README.md) | 요구사항·테스트 등 문서 양식 |
 
-## 목차
+`js-dev-toolkit`을 1뎁스로 세며 메뉴는 최대 4뎁스까지 둡니다. 각 최상위 폴더의 README는 담당 범위를 요약합니다. 상세 주제는 해당 영역 아래에 두고, 아직 자료가 없는 폴더에는 `.gitkeep`을 둡니다.
 
-- [자료 찾기](<#자료-찾기>)
-- [메뉴 깊이](<#메뉴-깊이>)
-- [분류 기준](<#분류-기준>)
-
-## 자료 찾기
-
-| 영역 | 내용 |
-|---|---|
-| [아키텍처](<architecture/README.md>) | 시스템 경계·책임·의존성과 설계 판단 |
-| [API](<api/README.md>) | 프로토콜 계약과 호출 방법 |
-| [Auth](auth/README.md) | 사용자 인증, 권한 위임과 API 키 관리 |
-| [인프라](<infrastructure/README.md>) | 실행 환경·배포·운영 구성 안내 |
-| [개발 프로세스](<development-process/README.md>) | 개발 단계별 산출물 안내 |
-| [산출물 양식](<templates/README.md>) | 요구사항 명세서와 테스트 문서 양식 |
-
-## 메뉴 깊이
-
-`js-dev-toolkit`을 1뎁스로 세며 폴더 메뉴는 최대 4뎁스입니다. 예를 들어 `js-dev-toolkit → architecture → application → msa`가 4뎁스입니다. 4뎁스 폴더에는 파일만 둡니다.
-
-아키텍처는 영역별로 구분하고, 여러 문서가 있는 주제는 하위 폴더로 묶습니다. 단일 문서는 영역 폴더에 바로 둡니다. API와 인프라는 영역별 README에 작성할 주제를 정리하고, 본문이 없는 주제 폴더는 `.gitkeep`으로 유지합니다.
-
-## 분류 기준
-
-MSA에서 gRPC를 선택하는 판단은 아키텍처에, gRPC 계약과 호출 구현 방법은 API에 둡니다. 인프라 설계 판단은 아키텍처에서 다루고, 구체적인 구축·운영 방법은 인프라에 둡니다. 관련 문서는 링크로 연결하며 중복 작성하지 않습니다.
+**경계:** 아키텍처 문서는 시스템 구조와 설계 이유를, API 문서는 시스템 간 계약과 통신 방식을, 인증 자료는 신원 확인과 권한 관리를 다룹니다. `architecture/data`는 데이터 모델·소유권·일관성의 설계 판단을, `database`는 스키마·쿼리·마이그레이션 구현을 다룹니다. `architecture/infrastructure`는 기반 구조 선택을, `infrastructure`는 실행 환경과 구축 도구를 다룹니다. 테스트 양식은 `templates/testing`, 테스트 방법은 `testing`에 둡니다.
