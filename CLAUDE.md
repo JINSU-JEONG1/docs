@@ -46,10 +46,10 @@ Keep format-specific styling and implementation rules out of this file.
 
 Work is split by owner at the top level:
 
-* `Jinsu/` — personal work
+* `js-dev-toolkit/` — personal work
 * `Teia/` — company work
 
-`Teia/` is local-only and excluded by `.gitignore`. This is a personal repository, so never stage, commit, or force-add company material, and never copy company content into `Jinsu/` or any other tracked path.
+`Teia/` is local-only and excluded by `.gitignore`. This is a personal repository, so never stage, commit, or force-add company material, and never copy company content into `js-dev-toolkit/` or any other tracked path.
 
 Inside an owner folder, organize work in two numbered levels:
 
